@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id = p1></p>
+
+    <script>
+        let student = ["joz","bai",10,"pala"]
+        document.getElementById("p1").innerHTML = student
+
+        console.log(student[0])
+        student[2] = 9
+        document.getElementById("p1").innerHTML = student
+
+        console.log(student.length)
+
+        student.push("apple")
+        console.log(student)
+
+        student.pop()
+        console.log(student)
+
+        student.unshift("begin")
+        console.log(student)
+        
+        student.shift()
+        console.log(student)
+
+        console.log(student.includes("joz"))
+        console.log(student.indexOf("pala"))
+
+
+
+    </script>
+</body>
+</html>
